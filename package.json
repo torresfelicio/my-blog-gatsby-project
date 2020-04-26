@@ -33,6 +33,7 @@
     "minireset.css": "0.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "styled-icons": "^10.2.1"
   }
 }

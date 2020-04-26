@@ -1,13 +1,14 @@
 ---
-title: "Nosso primeiro post"
-date: "2020-04-25"
-description: "Illas semine campoque declivia oppida corpora nam inter fuit discordia tellus solidumque iunctarum erat: quae terrenae ubi rerum recessit"
+title: "Meu primeiro post"
+date: "2020-04-26"
+description: "Meu primeiro post e novidades para os proximos."
 draft: false
 tags:
     - Blog
-    - Primeiro post
+    - Gostack
 ---
 
-Aqui vai todo o conteúdo do seu blog, e você pode editar e escrever da maneira que mais gostar. Agora, como todo site deve ter, bora colocar um lorem ipsum:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt hendrerit purus at elementum. Quisque sit amet malesuada felis. Proin ac fermentum lacus. Duis libero magna, iaculis ac semper id, volutpat ac mauris. Pellentesque ultricies lectus ut lectus eleifend fringilla. Nunc laoreet placerat pretium. Phasellus nec ultricies sem. Nunc pharetra ullamcorper elementum. Sed eget sem et nibh volutpat pharetra vel ac enim.
+Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
+irei postar o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo.
+ 
+este é um blog feito com Gatsby e um pouco de café, espero eu possa ajudar a tirar dúvidas de pessoas que querem aprender, assim como eu precisei tirar minhas duvidas em outros blogs.
