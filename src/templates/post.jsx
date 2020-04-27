@@ -7,16 +7,15 @@ import SEO from '../components/SEO/SEO';
 
 export default class Post extends Component {
   render() {
-    const disqusConfig = {
-      shortname: process.env.GATSBY_DISQUS_NAME,
-      config: { identifier: slug, title },
-    }
     const { data } = this.props;
     const { fields } = data.markdownRemark;
     const { slug } = fields;
     const { title, tags, date, description } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
-
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: slug, title },
+    }
 
 
     return (
