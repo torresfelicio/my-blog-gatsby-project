@@ -10,6 +10,12 @@ module.exports = {
     "gatsby-plugin-catch-links",
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-lucastorres-netlify-app`,
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',

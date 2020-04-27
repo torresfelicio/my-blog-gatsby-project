@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import _ from "lodash";
+import { DiscussionEmbed } from "disqus-react";
 import Layout from "../components/Layout";
 import SEO from '../components/SEO/SEO';
 
 export default class Post extends Component {
   render() {
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: slug, title },
+    }
     const { data } = this.props;
     const { fields } = data.markdownRemark;
     const { slug } = fields;
     const { title, tags, date, description } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
+
+
+
     return (
       <Layout>
         <div style={{ backgroundColor: '#F2F3F4', width: '100%', padding: '1.5rem', borderRadius: '0.50rem', margin: '10px 15px'}}>
@@ -19,7 +27,8 @@ export default class Post extends Component {
           <p>{tags.map(tag => <Link style={{  marginRight: '20px' }} key={tag} to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>)}</p>
           <p style={{ fontSize: '12px',marginTop:'15px' }}>{date}</p>
           <div className="content">
-            <p dangerouslySetInnerHTML={{ __html: html }} />
+            <p dangerouslySetInnerHTML={{ __html: html }} /> 
+            <DiscussionEmbed {...disqusConfig} />
           </div>
         </div>
       </Layout>
