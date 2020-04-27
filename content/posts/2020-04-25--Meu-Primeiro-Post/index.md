@@ -7,7 +7,7 @@ tags:
     - Blog
     - Gostack
 ---
-<p align="right">
+<p align="center">
   <img src="https://i.imgur.com/Z8XmAYV.gif?raw=true" alt="A rocket" width="200"/>
 </p>
 
