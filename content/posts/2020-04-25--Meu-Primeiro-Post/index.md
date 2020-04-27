@@ -8,7 +8,7 @@ tags:
     - Gostack
 ---
 <p align="center">
-  <img src="https://i.imgur.com/Z8XmAYV.gif?raw=true" alt="A rocket"/>
+  <img src="https://i.imgur.com/Z8XmAYV.gif?raw=true" alt="A rocket" width="200"/>
 </p>
 
 Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
