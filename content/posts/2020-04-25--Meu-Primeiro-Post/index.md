@@ -7,7 +7,10 @@ tags:
     - Blog
     - Gostack
 ---
-![](/content/posts/2020-04-25-Meu-Primeiro-Post/image.jpeg)
+<p align="center">
+  <img src="https://i.imgur.com/Z8XmAYV.gif?raw=true" alt="A rocket"/>
+</p>
+
 Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
 irei postar o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo.
  
