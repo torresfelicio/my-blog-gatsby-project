@@ -26,10 +26,10 @@ export default class Post extends Component {
           <p>{tags.map(tag => <Link style={{  marginRight: '20px' }} key={tag} to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>)}</p>
           <p style={{ fontSize: '12px',marginTop:'15px' }}>{date}</p>
           <div className="content">
-            <p dangerouslySetInnerHTML={{ __html: html }} /> 
-            <DiscussionEmbed {...disqusConfig} />
+            <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div>
         </div>
+        <DiscussionEmbed {...disqusConfig} />
       </Layout>
     )
   }
