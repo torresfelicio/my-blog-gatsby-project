@@ -11,9 +11,9 @@ tags:
 Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
 irei postar o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo.
 
-<p align="center">
+<center>
   <img src="https://i.imgur.com/Z8XmAYV.gif?raw=true" alt="A rocket" width="200px"/>
-</p>
+</center>
 
 Este é um blog feito com Gatsby e um pouco de café, espero eu possa ajudar a tirar dúvidas de pessoas que querem aprender, assim como eu precisei tirar minhas duvidas em outros blogs para conseguir construir esse aqui.
 
