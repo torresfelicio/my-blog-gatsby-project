@@ -9,6 +9,8 @@ tags:
 ---
 
 <img style="display: block; margin: auto;" alt="photo" src="https://i.imgur.com/Z8XmAYV.gif?raw=true"  alt="A rocket" width="200px">
+
+
 Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
 irei postar o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo.
 
