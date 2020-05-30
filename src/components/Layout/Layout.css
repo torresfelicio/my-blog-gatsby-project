@@ -2,12 +2,25 @@
 
 * {
   text-decoration: none;
-  color: #1C1C1C;
+  color: rgba(255, 255, 255, 0.7);
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #111122;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rebeccapurple;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #F2F3F4;
+  background-color: black;
 }
 
 html, body {
@@ -35,11 +48,11 @@ p, div {
 #ul #li {
   display: inline;
   margin-left: 10px;
-}
-#ul #li:hover {
   width: 20px;
   padding: 5px;
   border-radius: 10px;
-  background: black;
-  color: #F2F3F4;
+}
+#ul #li:hover {
+  background: #111122;
+  color: rgba(255, 255, 255, 0.7);
 }

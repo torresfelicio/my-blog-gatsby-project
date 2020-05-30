@@ -1,6 +1,6 @@
 ---
 title: "Meu primeiro post"
-date: "2020-04-26"
+date: "2020-05-30"
 description: "Meu primeiro post e novidades para os proximos."
 draft: false
 tags:
@@ -8,11 +8,13 @@ tags:
     - Gostack
 ---
 
-<img style="display: block; margin: auto;" alt="photo" src="https://i.imgur.com/Z8XmAYV.gif?raw=true"  alt="A rocket" width="200px">
+<img style="display: block; margin: auto;" alt="photo" src="https://images.unsplash.com/photo-1588325935601-9352032828e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1042&q=80"  alt="A rocket" width="640px" height="431"> 
+<br/>
+<br/>
 
+Aqui vai o meu primeiro post neste simplório blog, pretendo postar coisas legais futuramente e deixar meus projetos e tudo o que eu conseguir criar aqui.
 
-Aqui vai o meu primeiro post neste simplório blog, mas coisas legais futuramente estarão aqui,
-irei postar o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo.
+Todo o conteúdo que estou aprendendo durante a semana no Gostack da Rocketseat, entre outras coisas que vão surgindo será registrado neste simplório blog.
+Este blog foi feito com Gatsby, e um pouco de café, espero que eu possa ajudar a tirar dúvidas de pessoas que querem aprender, assim como eu precisei tirar minhas duvidas em outros blogs para conseguir construir esse aqui.
 
-Este é um blog feito com Gatsby e um pouco de café, espero eu possa ajudar a tirar dúvidas de pessoas que querem aprender, assim como eu precisei tirar minhas duvidas em outros blogs para conseguir construir esse aqui.
-
+Será um prazer escrever aqui, ainda mais que sei que algumas pessoas queriam muito 😄. 

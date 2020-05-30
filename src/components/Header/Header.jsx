@@ -17,7 +17,7 @@ export default () => (
       <header >
         <nav>
           <ul className="content">
-          <li class="text" data-text="Lucas Torres"><Link to="/">{data.site.siteMetadata.title}</Link></li>
+          <Link to="/"><li class="text" data-text="Lucas Torres">{data.site.siteMetadata.title}</li></Link>
           </ul>
         </nav>
       </header>
