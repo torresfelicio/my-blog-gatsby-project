@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "gatsby"
 import Header from '../Header';
 import Container from '../Container';
 import {Helmet} from 'react-helmet';
@@ -22,11 +21,6 @@ export default ({ children }) => (
         backgroundClip: 'padding-box, border-box', padding: '1px'
       }} alt="imagem do criador do blog"></img>
 
-        <ul id="ul">
-        <Link to="/"><li id="li">Home</li></Link>
-        <Link to="./Codes"><li id="li">Codes</li></Link>
-          <li></li>
-          </ul>
       <Container>
         {children}
       </Container>
