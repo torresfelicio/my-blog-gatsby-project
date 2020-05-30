@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .cache"
   },
   "repository": {
     "type": "git",
@@ -19,18 +20,17 @@
   "homepage": "https://github.com/torresfelicio/my-blog#readme",
   "dependencies": {
     "disqus-react": "^1.0.8",
-    "gatsby": "^2.20.36",
-    "gatsby-cli": "^2.12.0",
-    "gatsby-plugin-catch-links": "^2.2.4",
+    "gatsby": "^2.22.13",
+    "gatsby-cli": "^2.12.38",
+    "gatsby-plugin-catch-links": "^2.3.3",
     "gatsby-plugin-disqus": "^1.1.4",
-    "gatsby-plugin-feed": "^2.4.4",
-    "gatsby-plugin-google-analytics": "^2.2.5",
-    "gatsby-plugin-manifest": "^2.3.7",
-    "gatsby-plugin-offline": "^3.1.5",
-    "gatsby-plugin-react-helmet": "^3.2.5",
-    "gatsby-plugin-sitemap": "^2.3.6",
-    "gatsby-source-filesystem": "^2.2.5",
-    "gatsby-transformer-remark": "^2.7.5",
+    "gatsby-plugin-feed": "^2.5.3",
+    "gatsby-plugin-google-analytics": "^2.3.2",
+    "gatsby-plugin-manifest": "^2.4.9",
+    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-sitemap": "^2.4.3",
+    "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-transformer-remark": "^2.8.13",
     "helmet": "^3.22.0",
     "lodash": "^4.17.15",
     "minireset.css": "0.0.6",

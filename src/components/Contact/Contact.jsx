@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import '../../components/Layout/Layout';
+import Header from '../components/Header/Header';
+import '../components/Layout/Layout';
 import './Contact.css'
 
 
@@ -40,4 +40,4 @@ Todos os meus códigos e projetos estão no github, vem dar uma olhada, talvez v
 </div>
     
  </>
-);
+)

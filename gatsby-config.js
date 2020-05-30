@@ -23,7 +23,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-react-helmet',
-    "gatsby-plugin-offline",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
@@ -38,12 +37,7 @@ module.exports = {
         icon: "static/favicon.png",
       },
     },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-feed`,
       options: {
