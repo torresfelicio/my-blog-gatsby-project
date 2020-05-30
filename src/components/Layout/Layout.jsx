@@ -24,7 +24,7 @@ export default ({ children }) => (
 
         <ul id="ul">
         <Link to="/"><li id="li">Home</li></Link>
-        <Link to="/Code"><li id="li">Codes</li></Link>
+        <Link to="/Code/"><li id="li">Codes</li></Link>
         <Link to="/Contact"><li id="li">Contact</li></Link>
           <li></li>
           </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import '../components/Layout/Layout';
+import Header from '../../src/components/Header/Header';
+import '../../src/components/Layout/Layout';
 import './Contact.css'
 
 

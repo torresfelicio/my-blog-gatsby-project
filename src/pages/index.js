@@ -13,6 +13,7 @@ export default class Index extends Component {
       </Layout>
     )
   }
+
 };
 
 export const pageQuery = graphql`
