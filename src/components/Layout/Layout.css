@@ -27,3 +27,19 @@ p, div {
 .date{
   font-size: 12;
 }
+
+#ul {   
+  width: 100%;
+  text-align:center;
+}
+#ul #li {
+  display: inline;
+  margin-left: 10px;
+}
+#ul #li:hover {
+  width: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background: black;
+  color: #F2F3F4;
+}

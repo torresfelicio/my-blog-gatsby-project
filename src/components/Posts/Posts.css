@@ -10,6 +10,9 @@
   background-color: #FFFAFA;
   box-shadow: #CDC9C9 0.0em 0.1em 0.1em ;
 }
+.post:hover {
+  background: #CDC9C9;
+}
 
 .post-title {
   text-decoration: none;

@@ -14,9 +14,15 @@ export default () => (
       }
     `}
     render={data => (
-      <header className="header">
-        <Link to="/"><h1 className="header-title">{data.site.siteMetadata.title}</h1></Link>
+      <header >
+        <nav>
+          <ul className="content">
+          <li class="text" data-text="Lucas Torres"><Link to="/">{data.site.siteMetadata.title}</Link></li>
+          </ul>
+        </nav>
       </header>
+      
     )}
+    
   />
 )
