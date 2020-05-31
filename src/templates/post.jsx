@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import _ from "lodash";
-import { DiscussionEmbed } from "disqus-react";
 import Layout from "../components/Layout";
 import SEO from '../components/SEO/SEO';
 
@@ -17,7 +16,6 @@ export default class Post extends Component {
       config: { identifier: slug, title },
     }
 
-
     return (
       <Layout>
         <div style={{ backgroundColor: '#111111', width: '100%', padding: '1.5rem', borderRadius: '0.50rem', margin: '10px 15px'}}>
@@ -29,11 +27,12 @@ export default class Post extends Component {
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div>
         </div>
-        <DiscussionEmbed {...disqusConfig} />
       </Layout>
+      
     )
   }
 };
+
 
 export const pageQuery = graphql`
   query PostPage($slug: String!) {

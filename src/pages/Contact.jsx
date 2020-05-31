@@ -1,5 +1,6 @@
-import React from 'react';
-import Header from '../../src/components/Header/Header';
+import React from 'react'
+import Header from '../../src/components/Header/Header'
+import Footer from '../../src/components/Footer/Footer'
 import '../../src/components/Layout/Layout';
 import './Contact.css'
 
@@ -38,6 +39,6 @@ Todos os meus códigos e projetos estão no github, vem dar uma olhada, talvez v
         </div>
 </div>
 </div>
-    
+<Footer/>
  </>
 )

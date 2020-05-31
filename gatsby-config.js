@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `https-lucastorres-netlify-app`,
+        shortname: `https-lucastorres-netlify-app-1.disqus.com/count.js`,
       }
     },
     {

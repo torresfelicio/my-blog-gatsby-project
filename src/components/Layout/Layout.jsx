@@ -6,6 +6,7 @@ import {Helmet} from 'react-helmet';
 import favicon from '../../../static/favicon.png';
 import me from '../../../static/me.jpg';
 import config from '../../../data/config';
+import Footer from '../Footer/Footer';
 import './Layout.css';
 
 export default ({ children }) => (
@@ -32,5 +33,6 @@ export default ({ children }) => (
         {children}
       </Container>
     </main>
+    <Footer/>
   </div> 
 );
