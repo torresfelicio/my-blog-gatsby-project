@@ -13,6 +13,7 @@ export default ({ children }) => (
   <>
   <div>
     <Helmet>
+      <title>Lucas Torres</title>
       <meta name="description" content={config.siteDescription} />
       <link rel="icon" href={favicon} />
     </Helmet>
