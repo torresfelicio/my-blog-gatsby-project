@@ -21,11 +21,11 @@ export default class Post extends Component {
       identifier: post.id,
       title: post.frontmatter.title,
     };
-
-    return (
+//page
+    return ( 
       <>
       <Layout>
-        <div>
+        <article>
         <div style={{ backgroundColor: '#111111', width: '100%', padding: '1.5rem', borderRadius: '0.50rem', margin: '10px 15px'}}>
           <SEO title={title} url={slug} description={description} article />
           <h1 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom:'20px' }}>{title}</h1>
@@ -35,7 +35,7 @@ export default class Post extends Component {
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div></div>
           <DiscussionEmbed style={{marginLeft: '35px'}} shortname={disqusShortname} config={disqusConfig} />
-        </div>
+        </article>
       </Layout>
       </>
     )
