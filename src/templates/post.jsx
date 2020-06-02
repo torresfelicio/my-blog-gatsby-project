@@ -34,7 +34,7 @@ export default class Post extends Component {
           <div className="content">
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div></div>
-          <DiscussionEmbed style={{marginLeft: '35px'}} shortname={disqusShortname} config={disqusConfig} />
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </article>
       </Layout>
       </>
