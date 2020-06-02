@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import _ from "lodash";
 import Layout from "../components/Layout";
+import Footer from '../components/Footer/Footer'
+import post from './post.css';
 
 import SEO from '../components/SEO/SEO';
-import { DiscussionEmbed, CommentCount  } from 'disqus-react' ;
+import { DiscussionEmbed} from 'disqus-react' ;
 
 
 export default class Post extends Component {
@@ -34,8 +36,11 @@ export default class Post extends Component {
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div> 
           </div>
-
       </Layout>
+      <div className="disqus">
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+          </div>
+          <Footer/>
       </>
     )
   }

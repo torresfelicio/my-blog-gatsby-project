@@ -35,6 +35,6 @@ export default ({ children }) => (
       </Container>
     </main>
   </div> 
-  <Footer/>
+
   </>
-); 
+);
