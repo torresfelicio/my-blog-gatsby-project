@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 import SEO from '../components/SEO/SEO';
 import { DiscussionEmbed, CommentCount  } from 'disqus-react' ;
-import Footer from '../components/Footer/Footer';
+
 
 export default class Post extends Component {
   render() {
@@ -25,7 +25,6 @@ export default class Post extends Component {
     return ( 
       <>
       <Layout>
-        <article>
         <div style={{ backgroundColor: '#111111', width: '100%', padding: '1.5rem', borderRadius: '0.50rem', margin: '10px 15px'}}>
           <SEO title={title} url={slug} description={description} article />
           <h1 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom:'20px' }}>{title}</h1>
@@ -33,9 +32,9 @@ export default class Post extends Component {
           <p style={{ fontSize: '12px',marginTop:'15px' }}>{date}</p>
           <div className="content">
             <p dangerouslySetInnerHTML={{ __html: html }} />  
-          </div></div>
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-        </article>
+          </div> 
+          </div>
+
       </Layout>
       </>
     )
