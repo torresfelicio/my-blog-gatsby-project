@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer';
 import './Layout.css';
 
 export default ({ children }) => (
+  <>
   <div>
     <Helmet>
       <meta name="description" content={config.siteDescription} />
@@ -33,6 +34,7 @@ export default ({ children }) => (
         {children}
       </Container>
     </main>
-    <Footer/>
   </div> 
+  <Footer/>
+  </>
 );

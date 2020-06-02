@@ -21,7 +21,7 @@
   "dependencies": {
     "disqus-react": "^1.0.8",
     "gatsby": "^2.22.13",
-    "gatsby-cli": "^2.12.38",
+    "gatsby-cli": "^2.12.40",
     "gatsby-plugin-catch-links": "^2.3.3",
     "gatsby-plugin-disqus": "^1.1.4",
     "gatsby-plugin-feed": "^2.5.3",
@@ -35,6 +35,7 @@
     "lodash": "^4.17.15",
     "minireset.css": "0.0.6",
     "react": "^16.13.1",
+    "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
     "styled-icons": "^10.2.1"
