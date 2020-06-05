@@ -38,7 +38,7 @@ export default class Post extends Component {
           </div>
       </Layout>
       <div className="disqus">
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+          <DiscussionEmbed className="disqusComent" shortname={disqusShortname} config={disqusConfig} />
           </div>
           <Footer/>
       </>
