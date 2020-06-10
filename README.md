@@ -1,5 +1,8 @@
-![](https://img.icons8.com/clouds/200/000000/react.png)
 
+<h1 align="center">
+    <img alt="GoSatck" src="https://img.icons8.com/clouds/200/000000/react.png" />
+    <br>
+</h1>
 # Me Blog
 
 ## Aqui está um blog feito com Gatsby um pouco café e ansiedade
