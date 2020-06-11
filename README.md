@@ -37,7 +37,7 @@ $ git clone https://github.com/torresfelicio/my-blog.git
 $ cd my-blog
 
 # Install dependencies
-$ yarn install
+$ npm install
 
 # Run the app
 $ gatsby develop
