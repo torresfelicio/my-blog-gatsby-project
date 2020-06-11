@@ -17,7 +17,7 @@
 </h1>
 
 <h3 align="center">
-  Aqui está um blog feito com Gatsby um pouco café e ansiedade.
+  Aqui está um blog feito com Gatsby um pouco de café e ansiedade.
 </h3>
 
 # Criação
