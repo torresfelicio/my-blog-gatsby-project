@@ -1,6 +1,6 @@
 ---
 title: "Criando uma página estática simples."
-date: "2020-05-30"
+date: "2020-07-06"
 description: "Passo a passo para criar um simples página estática com HTML e CSS"
 draft: false
 tags:
