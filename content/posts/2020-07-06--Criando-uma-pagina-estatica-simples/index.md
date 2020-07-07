@@ -30,8 +30,6 @@ Logo em seguida adicione o seguinte código no arquivo index.html.
 
 Aqui é onde fica uma parte importante onde colocamos o nome da página, o caminho do nosso arquivo CSS. Agora vamos criar nosso corpo da página o body e o header.
 
-
-Como você pode observar criamos dois links dentro da tag header e da div que colocamos uma classe chamada links. Agora vamos colocar uma imagem que depois com o CSS iremos centralizar e deixar tudo lindão. Usaremos a tag img mas antes colocaremos ela dentro de uma div com uma id wrapper e logo após a imagem colocaremos um h1, h2, p onde no primeiro fica o título no segunda uma espécie de subtítulo e no terceiro um parágrafo, um simples texto.
 ```html
 <body>
   <header>
@@ -40,6 +38,16 @@ Como você pode observar criamos dois links dentro da tag header e da div que co
       <a href="/">Aulas</a>
     </div>
   </header>
+```
+Como você pode observar criamos dois links dentro da tag header e da div que colocamos uma classe chamada links. Agora vamos colocar uma imagem que depois com o CSS iremos centralizar e deixar tudo lindão. Usaremos a tag img mas antes colocaremos ela dentro de uma div com uma id wrapper e logo após a imagem colocaremos um h1, h2, p onde no primeiro fica o título no segunda uma espécie de subtítulo e no terceiro um parágrafo, um simples texto.
+```html
+  <div id="wrapper">
+    <img src="coloque-o-link-da-sua-imagem-aqui" alt="Lucas Torres">
+    <h1>Lucas Torres</h1>
+    <h2>Aluno - Rocketseat</h2>
+    <p>Programador fullstack, colaborador da comunidade frontend. 
+    <a href="github.com/torresfelicio">projetos</a></p>
+  </div>
 ```
 E por final no nosso arquivo html criaremos os links no final da página para linkar com as redes sociais. Usaremos mais uma div com uma id footer e um class links logo você irá entender o porque uma classe e uma id na mesma div. Um detalhe agora não esqueça de fechar as tags body e html.
 E o código completo está <a href="https://github.com/torresfelicio/learn_frontend/blob/master/HTML/LaunchBase/Fase%2002/Menu/index.html" target="_blank" style="color: #50FA7B">aqui. </a>
