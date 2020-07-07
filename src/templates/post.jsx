@@ -27,12 +27,12 @@ export default class Post extends Component {
     return ( 
       <>
       <Layout>
-        <div style={{ backgroundColor: '#111111', width: '100%', padding: '1.5rem', borderRadius: '0.50rem', margin: '10px 15px'}}>
+        <div className="article">
           <SEO title={title} url={slug} description={description} article />
           <h1 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom:'20px' }}>{title}</h1>
           <p>{tags.map(tag => <Link style={{  marginRight: '20px' }} key={tag} to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>)}</p>
           <p style={{ fontSize: '12px',marginTop:'15px' }}>{date}</p>
-          <div className="content">
+          <div className="content-post">
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div> 
           </div>

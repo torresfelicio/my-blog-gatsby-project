@@ -7,3 +7,14 @@
   margin-right: auto 
 }
 
+.article {
+  background: #111111;
+  width: 100%; 
+  padding: 1.5rem; 
+  border-radius: 0.50rem; 
+  margin: 10px auto;
+}
+
+.content-post {
+
+}

@@ -8,9 +8,7 @@ tags:
     - Tutoriais
 ---
 
-<img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/Criando-uma-p%C3%A1gina-est%C3%A1tica-simples.png?raw=true"  alt="Imagem da pagina criada pelos tutoriais" width="375px" height="328px"> 
-<br/>
-<br/>
+
 
 Para iniciarmos precisamos criar dois arquivos dentro de uma pasta, um com o nome index.html e o styles.css 
 
