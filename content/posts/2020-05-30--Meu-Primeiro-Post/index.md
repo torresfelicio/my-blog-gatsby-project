@@ -8,7 +8,7 @@ tags:
     - Gostack
 ---
 
-<img style="display: block; margin: auto;" alt="photo" src="https://images.unsplash.com/photo-1588325935601-9352032828e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1042&q=80"  alt="A rocket" width="640px" height="431"> 
+<img style="display: block; margin: auto;" alt="photo" src="https://images.unsplash.com/photo-1588325935601-9352032828e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1042&q=80"  alt="" width="640px" height="431"> 
 <br/>
 <br/>
 

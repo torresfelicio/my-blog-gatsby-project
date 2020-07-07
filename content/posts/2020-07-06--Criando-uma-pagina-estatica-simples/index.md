@@ -8,66 +8,16 @@ tags:
     - Tutoriais
 ---
 
-<img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/Criando-uma-p%C3%A1gina-est%C3%A1tica-simples.png?raw=true"  alt="Imagem da pagina criada pelos tutoriais"> 
+<img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/Criando-uma-p%C3%A1gina-est%C3%A1tica-simples.png?raw=true"  alt="Imagem da pagina criada pelos tutoriais" width="375px" height="328px"> 
 <br/>
 <br/>
-
-<h1 align="center">
-  Criando uma página estática simples.
-</h1>
 
 Para iniciarmos precisamos criar dois arquivos dentro de uma pasta, um com o nome index.html e o styles.css 
 
 <img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/menu.png?raw=true"  alt="Diretorio"> 
 
 Logo em seguida adicione o seguinte código no arquivo index.html.
-
-```bash
-<!DOCTYPE html>
-<html lang="PT">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My-Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-```
-Aqui é onde fica uma parte importante onde colocamos o nome da página, o caminho do nosso arquivo CSS. Agora vamos criar nosso corpo da página o body e o header.
-
-```bash
-<body>
-  <header>
-    <div class="links">
-      <a href="#">Sobre</a>
-      <a href="#">Aulas</a>
-    </div>
-  </header>
-</body>
-```
-Como você pode observar criamos dois links dentro da tag header e da div que colocamos uma classe chamada links. Agora vamos colocar uma imagem que depois com o CSS iremos centralizar e deixar tudo lindão. Usaremos a tag img mas antes colocaremos ela dentro de uma div com uma id wrapper e logo após a imagem colocaremos um h1, h2, p onde no primeiro fica o título no segunda uma espécie de subtítulo e no terceiro um parágrafo, um simples texto.
-
-```bash
-  <div id="wrapper">
-    <img src="https://avatars2.githubusercontent.com/u/18267941?s=460&u=935b3304de2d7ca3dd51e9618e4b68db707fd513&v=4" alt="Lucas Torres">
-    <h1>Lucas Torres</h1>
-    <h2>Aluno frontend</h2>
-    <p>Desenvolvedor junior frontend. Meus projetos estão <a href="github.com/torresfelicio">aqui.</a> </p>
-  </div>
-```
-E por final no nosso arquivo html criaremos os links no final da página para linkar com as redes sociais. Usaremos mais uma div com uma id footer e um class links logo você irá entender o porque uma classe e uma id na mesma div. Um detalhe agora não esqueça de fechar as tags body e html.
-
-```bash
-  <div id="footer" class="links">
-    <a href="/" target="_blank">Github</a>
-    <a href="/" target="_blank">Twitter</a>
-    <a href="/" target="_blank">Linkedin</a>
-  </div>
-</body>
-</html>
-```
-E o código completo vai ficar assim:
-
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +26,13 @@ E o código completo vai ficar assim:
   <title>My-Page</title>
   <link rel="stylesheet" href="styles2.css">
 </head>
+```
+
+Aqui é onde fica uma parte importante onde colocamos o nome da página, o caminho do nosso arquivo CSS. Agora vamos criar nosso corpo da página o body e o header.
+
+
+Como você pode observar criamos dois links dentro da tag header e da div que colocamos uma classe chamada links. Agora vamos colocar uma imagem que depois com o CSS iremos centralizar e deixar tudo lindão. Usaremos a tag img mas antes colocaremos ela dentro de uma div com uma id wrapper e logo após a imagem colocaremos um h1, h2, p onde no primeiro fica o título no segunda uma espécie de subtítulo e no terceiro um parágrafo, um simples texto.
+```html
 <body>
   <header>
     <div class="links">
@@ -83,26 +40,12 @@ E o código completo vai ficar assim:
       <a href="/">Aulas</a>
     </div>
   </header>
-
-  <div id="wrapper">
-    <img src="https://avatars2.githubusercontent.com/u/18267941?s=460&u=935b3304de2d7ca3dd51e9618e4b68db707fd513&v=4" alt="Lucas Torres">
-    <h1>Lucas Torres</h1>
-    <h2>Aluno frontend</h2>
-    <p>Desenvolvedor junior frontend. Meus projetos estão <a href="github.com/torresfelicio">aqui.</a> </p>
-  </div>
-
-  <div id="footer" class="links">
-    <a href="/" target="_blank">Github</a>
-    <a href="/" target="_blank">Twitter</a>
-    <a href="/" target="_blank">Linkedin</a>
-  </div>
-</body>
-</html>
 ```
+E por final no nosso arquivo html criaremos os links no final da página para linkar com as redes sociais. Usaremos mais uma div com uma id footer e um class links logo você irá entender o porque uma classe e uma id na mesma div. Um detalhe agora não esqueça de fechar as tags body e html.
+E o código completo está <a href="https://github.com/torresfelicio/learn_frontend/blob/master/HTML/LaunchBase/Fase%2002/Menu/index.html" target="_blank" style="color: #50FA7B">aqui. </a>
 
 Haha se você abrir esse arquivo index.html no seu navegador ele vai estar estranhão né, mas agora vamos deixá lo com uma aparência melhor, vá até o seu arquivo CSS e digite o seguinte código e veja a magia acontecer.
-
-```bash
+```css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
@@ -184,5 +127,4 @@ header {
   color: var(--color-primary);
 }
 ```
-
 Bacana não é mesmo? em poucos minutos você foi capaz de criar uma página lindona. Agora faça experiências mude as cores as fontes, imagens deixe essa página com a sua cara!
