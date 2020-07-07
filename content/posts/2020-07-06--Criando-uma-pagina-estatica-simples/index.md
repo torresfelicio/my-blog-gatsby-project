@@ -8,7 +8,7 @@ tags:
     - Tutoriais
 ---
 
-<img style="display: block; margin: auto;" alt="photo" src="./../../../assets/Criando-uma-página-estática-simples.png"  alt="Imagem da pagina criada pelos tutoriais"> 
+<img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/Criando-uma-p%C3%A1gina-est%C3%A1tica-simples.png?raw=true"  alt="Imagem da pagina criada pelos tutoriais"> 
 <br/>
 <br/>
 
@@ -18,11 +18,11 @@ tags:
 
 Para iniciarmos precisamos criar dois arquivos dentro de uma pasta, um com o nome index.html e o styles.css 
 
-<img style="display: block; margin: auto;" alt="photo" src="./../../../assets/menu.png"  alt="Diretorio"> 
+<img style="display: block; margin: auto;" alt="photo" src="https://github.com/torresfelicio/my-blog/blob/master/assets/menu.png?raw=true"  alt="Diretorio"> 
 
 Logo em seguida adicione o seguinte código no arquivo index.html.
 
-```html
+```bash
 <!DOCTYPE html>
 <html lang="PT">
 <head>
@@ -34,7 +34,7 @@ Logo em seguida adicione o seguinte código no arquivo index.html.
 ```
 Aqui é onde fica uma parte importante onde colocamos o nome da página, o caminho do nosso arquivo CSS. Agora vamos criar nosso corpo da página o body e o header.
 
-```html
+```bash
 <body>
   <header>
     <div class="links">
@@ -46,7 +46,7 @@ Aqui é onde fica uma parte importante onde colocamos o nome da página, o camin
 ```
 Como você pode observar criamos dois links dentro da tag header e da div que colocamos uma classe chamada links. Agora vamos colocar uma imagem que depois com o CSS iremos centralizar e deixar tudo lindão. Usaremos a tag img mas antes colocaremos ela dentro de uma div com uma id wrapper e logo após a imagem colocaremos um h1, h2, p onde no primeiro fica o título no segunda uma espécie de subtítulo e no terceiro um parágrafo, um simples texto.
 
-```html
+```bash
   <div id="wrapper">
     <img src="https://avatars2.githubusercontent.com/u/18267941?s=460&u=935b3304de2d7ca3dd51e9618e4b68db707fd513&v=4" alt="Lucas Torres">
     <h1>Lucas Torres</h1>
@@ -56,7 +56,7 @@ Como você pode observar criamos dois links dentro da tag header e da div que co
 ```
 E por final no nosso arquivo html criaremos os links no final da página para linkar com as redes sociais. Usaremos mais uma div com uma id footer e um class links logo você irá entender o porque uma classe e uma id na mesma div. Um detalhe agora não esqueça de fechar as tags body e html.
 
-```html
+```bash
   <div id="footer" class="links">
     <a href="/" target="_blank">Github</a>
     <a href="/" target="_blank">Twitter</a>
@@ -67,7 +67,7 @@ E por final no nosso arquivo html criaremos os links no final da página para li
 ```
 E o código completo vai ficar assim:
 
-```html
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@ E o código completo vai ficar assim:
 
 Haha se você abrir esse arquivo index.html no seu navegador ele vai estar estranhão né, mas agora vamos deixá lo com uma aparência melhor, vá até o seu arquivo CSS e digite o seguinte código e veja a magia acontecer.
 
-```css
+```bash
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
