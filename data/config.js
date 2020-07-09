@@ -5,8 +5,8 @@ const config = {
   siteRss: "/rss.xml",
   siteImage: "https://avatars1.githubusercontent.com/u/18267941?v=4",
   googleAnalyticsID: "",
-  themeColor: "#070719",
-  backgroundColor: "#FFFAFA",
+  themeColor: "#3c0bad",
+  backgroundColor: "##3c0bad;",
   siteUrl: "https://lucastorres.netlify.com",
 };
 

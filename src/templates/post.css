@@ -20,7 +20,7 @@ p {
 .content-post{
   margin: 0 100px;
   text-align: justify;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 @media (max-width: 750px) {
