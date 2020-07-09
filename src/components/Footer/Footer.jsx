@@ -7,4 +7,4 @@ export default () => (
     <a href="https://twitter.com/torresfelicio" target="_blank">Twitter</a>
     <a href="https://www.linkedin.com/in/torresfelicio/" target="_blank">Linkedin</a>
   </div>
-);
+); 
