@@ -12,14 +12,12 @@ export default () => (
           }
         }
       }
-    `}
+    `} 
     render={data => (
       <header >
-        <nav>
-          <ul className="content">
-          <Link to="/"><li class="text" data-text="Lucas Torres">{data.site.siteMetadata.title}</li></Link>
-          </ul>
-        </nav>
+        <div className="header_name">
+          <Link to="/"><h1 class="text" data-text="Lucas Torres">{data.site.siteMetadata.title}</h1></Link>
+        </div>
       </header>
       
     )}

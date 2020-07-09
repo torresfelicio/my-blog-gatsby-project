@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import _ from "lodash";
 import Layout from "../components/Layout";
-import Footer from '../components/Footer/Footer'
-import post from './post.css';
+import './post.css';
 
 import SEO from '../components/SEO/SEO';
 import { DiscussionEmbed} from 'disqus-react' ;
@@ -30,8 +29,8 @@ export default class Post extends Component {
         <div className="article">
           <SEO title={title} url={slug} description={description} article />
           <h1 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom:'20px' }}>{title}</h1>
-          <p>{tags.map(tag => <Link style={{  marginRight: '20px' }} key={tag} to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>)}</p>
-          <p style={{ fontSize: '12px',marginTop:'15px' }}>{date}</p>
+          <p className="tags">{tags.map(tag => <Link style={{  marginRight: '20px', color: '#fff', opacity: '0.2'  }} key={tag} to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>)}</p>
+          <p style={{ fontSize: '12px',margin:'15px 0 15px'}}>{date}</p>
           <div className="content-post">
             <p dangerouslySetInnerHTML={{ __html: html }} />  
           </div> 
@@ -40,7 +39,7 @@ export default class Post extends Component {
       <div className="disqus">
           <DiscussionEmbed className="disqusComent" shortname={disqusShortname} config={disqusConfig} />
           </div>
-          <Footer/>
+          
       </>
     )
   }

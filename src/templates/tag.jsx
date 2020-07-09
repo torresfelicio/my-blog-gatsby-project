@@ -13,7 +13,7 @@ export default class Tag extends Component {
       <Layout>
         <div>
           <SEO title={`Tag: ${tag}`} description={`Todos os posts marcados com a tag "${tag}" no CodeStack Brasil`} url={pathname}/>
-          <h2 style={{ fontSize: '22px', padding: '0px 15px' }}>Todos os posts com a tag: {tag}</h2>
+          <h2 style={{ fontSize: '22px', padding: '0px 15px'}}>Todos os posts com a tag: {tag}</h2>
           <Posts data={data}/>
         </div>
       </Layout>

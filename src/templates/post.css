@@ -7,14 +7,16 @@
   margin-right: auto 
 }
 
-.article {
-  background: #111111;
-  width: 100%; 
-  padding: 1.5rem; 
-  border-radius: 0.50rem; 
-  margin: 10px auto;
+h1, h2 {
+  color: #fff;
+}
+p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
 }
 
-.content-post {
-  margin: auto;
+.content-post{
+  margin: 0 30px;
+  text-align: justify;
 }

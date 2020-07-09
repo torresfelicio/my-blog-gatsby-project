@@ -6,39 +6,22 @@ import './Contact.css'
 
 
 export default () => (
- <>
-    <Header />
-    <div className="cards">
-<div className="services">
-        <div className="content-0 content-1">
-          <div className="fab fa-twitter">
-</div>
-<h2>
-Twitter</h2>
-<p>
-É onde eu passo um tempo comentando e discutindo sobre as tecnologias do momento.</p>
-<a href="https://twitter.com/torresfelicio">Acessar</a>
+<>
+   <Header />
+   <div className="cards">
+        <div className="card">
+
+        <div className="card_image_container">
+        <img src="" alt="Logo do Linkedin" />
         </div>
-<div className="content-0 content-2">
-          <div className="fab fa-instagram">
-</div>
-<h2>
-Instagram</h2>
-<p>
-Vem conferir meus histories, sempre coloco o que estou criando no momento.</p>
-<a href="https://www.instagram.com/torresfellicio/">Acessar</a>
+        <div class="card_content">
+        <p>Recriando Interface do Twitter</p>
         </div>
-<div className="content-0 content-3">
-          <div className="fab fa-youtube">
-</div>
-<h2>
-Github</h2>
-<p>
-Todos os meus códigos e projetos estão no github, vem dar uma olhada, talvez você pode me ajudar a mudar ou criar algo novo.</p>
-<a href="https://github.com/torresfelicio">Acessar</a>
+        <div class="card_info">
+        <p>57 min</p>
+        <p class="card_price">FREE</p>
         </div>
-</div>
-</div>
-<Footer/>
- </>
+        </div>
+   </div>
+</>
 )

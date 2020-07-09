@@ -9,10 +9,9 @@ export default () => (
    <>
    <Header />
    <div className="build">
-      <img src="https://icon-icons.com/icons2/1965/PNG/256/tool3_122846.png"></img>
+      <img src="https://cdn.icon-icons.com/icons2/119/PNG/128/eternal_sledge_hammer_19649.png"></img>
       <h1>Em construção</h1>
       <p>Logo meus projetos bacanas estarão aqui junto com seu codigo no github.</p>
    </div>
-   <Footer/>
    </>
 )

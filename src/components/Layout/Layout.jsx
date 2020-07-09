@@ -19,19 +19,18 @@ export default ({ children }) => (
     </Helmet>
     <Header />
     <main role="main">
-    <img src={me} style={{borderRadius: '500px', width: '150px', height: '150px', display: 'flex',
+    <img src={me} style={{borderRadius: '500px', width: '200px', height: '200px', display: 'flex',
         marginLeft: 'auto', marginRight: 'auto', marginTop: '50px', marginBottom: '50px',
         backgroundOrigin: 'border-box',
         backgroundClip: 'padding-box, border-box', padding: '1px'
       }} alt="imagem do criador do blog"></img>
 
-        <ul id="ul">
-        <Link to="/"><li id="li">Home</li></Link>
-        <Link to="/Code/"><li id="li">Codes</li></Link>
-        <Link to="/Contact"><li id="li">Contact</li></Link>
-          <li></li>
-          </ul>
-      <Container>
+        <div className="links">
+          <Link to="/"><p>Home</p></Link>
+          <Link to="/Code/"><p>Codes</p></Link>
+          <Link to="/Contact"><p>Contact</p></Link>
+        </div>
+      <Container> 
         {children}
       </Container>
     </main>
