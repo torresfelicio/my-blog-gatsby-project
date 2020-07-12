@@ -17,7 +17,7 @@ export default () => (
             <img src={project01}></img>
             </div>
             <div className="card_content">
-               <p>Projeto github explorer usando a api do github para listar repositorios, usando ReactJS e Typescript</p>
+               <p>Projeto github explorer usando a api do github para listar repositorios, usando ReactJS e Typescript.</p>
             </div>
             <div className="card_link">
                <a href="https://project-github-explorer.netlify.app/" target="_blanck">Acessar Projeto</a>
@@ -29,7 +29,7 @@ export default () => (
             <img src={project02}></img>
             </div>
             <div className="card_content">
-               <p>Projeto utilizando conceitos aprendidos nos estudos de Javascript, HTML e CSS</p>
+               <p>Projeto utilizando conceitos aprendidos nos estudos de Javascript, HTML e CSS.</p>
             </div>
             <div className="card_link">
                <a href="https://projeto-tetrisjs.netlify.app/" target="_blanck">Acessar Projeto</a>
@@ -41,7 +41,7 @@ export default () => (
             <img src={project03}></img>
             </div>
             <div className="card_content">
-               <p>Projeto utilizando conceitos aprendidos nos estudos de Javascript, HTML e CSS</p>
+               <p>Projeto utilizando conceitos aprendidos nos estudos da Rocktseat com HTM, CSS e javascript basico.</p>
             </div>
             <div className="card_link">
                <a href="https://project-nlw-casa-criativa.netlify.app/" target="_blanck">Acessar Projeto</a>
