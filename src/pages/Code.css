@@ -1,3 +1,30 @@
-.build {
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card_image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px #5830b4b7;
+}
+
+
+.card_content, .card_link {
+  padding: 24px;
+}
+
+.card_link a{
+  background: ivory;
+  padding: 5px 10px;
+  border-radius: 20px;
   text-align: center;
+  transition: 200ms;
+}
+
+.card_link a:hover {
+  opacity: 0.3;
 }

@@ -3,15 +3,52 @@ import Header from '../../src/components/Header/Header'
 import Footer from '../../src/components/Footer/Footer'
 import '../../src/components/Layout/Layout'
 import './Code.css'
+import project01 from '../../assets/project01.png';
+import project02 from '../../assets/project02.png';
+import project03 from '../../assets/project03.png';
 
 
 export default () => (
    <>
    <Header />
-   <div className="build">
-      <img src="https://github.com/torresfelicio/my-blog/blob/newLayout/assets/build.png?raw=true"></img>
-      <h1>Em construção</h1>
-      <p>Logo meus projetos bacanas estarão aqui junto com seu codigo no github.</p>
-   </div>
+      <section className="cards">
+         <div className="card">
+            <div className="card_image">
+            <img src={project01}></img>
+            </div>
+            <div className="card_content">
+               <p>Projeto github explorer usando a api do github para listar repositorios, usando ReactJS e Typescript</p>
+            </div>
+            <div className="card_link">
+               <a href="https://project-github-explorer.netlify.app/" target="_blanck">Acessar Projeto</a>
+            </div>
+         </div>
+
+         <div className="card">
+            <div className="card_image">
+            <img src={project02}></img>
+            </div>
+            <div className="card_content">
+               <p>Projeto utilizando conceitos aprendidos nos estudos de Javascript, HTML e CSS</p>
+            </div>
+            <div className="card_link">
+               <a href="https://projeto-tetrisjs.netlify.app/" target="_blanck">Acessar Projeto</a>
+            </div>
+         </div>
+
+         <div className="card">
+            <div className="card_image">
+            <img src={project03}></img>
+            </div>
+            <div className="card_content">
+               <p>Projeto utilizando conceitos aprendidos nos estudos de Javascript, HTML e CSS</p>
+            </div>
+            <div className="card_link">
+               <a href="https://project-nlw-casa-criativa.netlify.app/" target="_blanck">Acessar Projeto</a>
+            </div>
+         </div>
+
+         
+      </section>
    </>
 )
