@@ -41,7 +41,7 @@ export default () => (
             <img src={project03}></img>
             </div>
             <div className="card_content">
-               <p>Projeto utilizando conceitos aprendidos nos estudos da Rocktseat com HTM, CSS e javascript basico.</p>
+               <p>Projeto utilizando conceitos dos estudos da Rocktseat com HTM, CSS e javascript basico.</p>
             </div>
             <div className="card_link">
                <a href="https://project-nlw-casa-criativa.netlify.app/" target="_blanck">Acessar Projeto</a>
