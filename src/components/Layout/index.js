@@ -1,1 +1,2 @@
-export { default } from "./Layout";
+// @flow strict
+export { default } from './Layout';
