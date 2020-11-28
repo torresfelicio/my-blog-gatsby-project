@@ -1,6 +1,0 @@
-User-agent: *
-
-Allow: /
-Disallow: /404
-
-sitemap: https://lucastorres.netlify.com/sitemap.xml

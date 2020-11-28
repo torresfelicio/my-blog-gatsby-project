@@ -1,43 +1,33 @@
 {
-  "name": "my-blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf .cache"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.23.12",
+    "gatsby-source-prismic": "^3.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/torresfelicio/my-blog.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/torresfelicio/my-blog/issues"
-  },
-  "homepage": "https://github.com/torresfelicio/my-blog#readme",
-  "dependencies": {
-    "disqus-react": "^1.0.8",
-    "gatsby": "^2.22.13",
-    "gatsby-cli": "^2.12.40",
-    "gatsby-plugin-catch-links": "^2.3.3",
-    "gatsby-plugin-disqus": "^1.1.4",
-    "gatsby-plugin-feed": "^2.5.3",
-    "gatsby-plugin-google-analytics": "^2.3.2",
-    "gatsby-plugin-manifest": "^2.4.9",
-    "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-sitemap": "^2.4.3",
-    "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-remark": "^2.8.13",
-    "helmet": "^3.22.0",
-    "lodash": "^4.17.15",
-    "minireset.css": "0.0.6",
-    "react": "^16.13.1",
-    "react-disqus-comments": "^1.4.0",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "styled-icons": "^10.2.1"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

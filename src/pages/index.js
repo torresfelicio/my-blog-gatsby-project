@@ -1,42 +1,44 @@
-import React, { Component } from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Posts from '../components/Posts';
-import 'minireset.css';
+import React from 'react'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
-export default class Index extends Component {
-  render() {
-    const { data } = this.props;
-    return (
-      <Layout>
-        <Posts data={data}/>
-      </Layout>
-    )
-  }
-
-};
-
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      limit: 2000
-      sort: {fields: [fields___prefix], order: DESC}
-      filter: { frontmatter: { draft: { ne: true } } }
-      ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          timeToRead
-          frontmatter {
-            title
-            tags
-            date(formatString: "DD/MM/YYYY")
-            description
+export default function Home() {
+  const { allPrismicPost: { edges } } = useStaticQuery(graphql`
+    query TodosMeusPosts {
+      allPrismicPost {
+        edges {
+          node {
+            data {
+              title {
+                text
+              }
+            }
+            uid
           }
         }
       }
     }
-  }
-`;
+  `)
+
+  return (
+    <div className="flex justify-center">
+      <div style={{ maxWidth: '700px' }} className="flex flex-column">
+        <div className="flex flex-column ph3">
+          <h1 className="mb0 pa0">Lucas Torres</h1>
+          <span className="mt3 gray">Falta mais café</span>
+        </div>
+        <ul className="pt3 ph3 mh0">
+          {edges.map(({ node: { data: { title: { text } } , uid } }) => {
+            return (
+              <li className="list">
+                <Link to={`/${uid}`} className="no-underline underline-hover black">
+                  <h2>{text}</h2>
+                </Link>
+                <hr />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </div>
+  )
+}

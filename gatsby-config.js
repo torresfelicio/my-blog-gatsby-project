@@ -1,96 +1,37 @@
-const config = require("./data/config");
+require("dotenv").config({
+  path: `.env`,
+})
 
 module.exports = {
-  siteMetadata: {
-    title: config.siteTitle,
-    description: config.siteDescription,
-    siteUrl: config.siteUrl
-  },
   plugins: [
-    "gatsby-plugin-catch-links",
-    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: 'gatsby-source-prismic',
       options: {
-        shortname: `https-lucastorres-netlify-app-1.disqus.com/count.js`,
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/content/posts`
-      }
-    },
-    'gatsby-plugin-react-helmet',
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: '/',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: "standalone",
-        icon: "static/favicon.png",
+        repositoryName: 'my-blog-gatsby-project',
+        accessToken: 'MC5YOEt4N2hJQUFDWUFnMllr.77-977-977-977-9TC7vv73vv70iVmwr77-9eO-_vRLvv73vv73vv71WZe-_vXdf77-9Qe-_ve-_ve-_ve-_vSfvv70',
+        releaseID: 'example-eiyaingiefahyi7z',
+        linkResolver: ({ node, key, value }) => (post) => `/${post.uid}`,
+        schemas: {
+          post: require('./src/schemas/post.json'),
+        },
+        lang: '*',
+        prismicToolbar: true,
+        shouldDownloadImage: ({ node, key, value }) => {
+          // Return true to download the image or false to skip.
+        },
+        imageImgixParams: {
+          auto: 'compress,format',
+          fit: 'max',
+          q: 50,
+        },
+        imagePlaceholderImgixParams: {
+          w: 100,
+          blur: 15,
+          q: 50,
+        },
+        typePathsFilenamePrefix:
+          'prismic-typepaths---your-repo-name',
       },
     },
-
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: {frontmatter: { draft: { ne: true } }}
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "Gatsby RSS Feed",
-          },
-        ],
-      },
-    },
-  ]
+  ],
 }
