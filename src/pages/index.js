@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../components/Logo/Logo'
-import Social from '../components/Socials/index'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function Home() {
@@ -39,10 +38,6 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <Social
-        linkedin="torresfelicio"
-        github="torresfelicio"
-      />
     </>
   )
 }
