@@ -2,12 +2,15 @@ import {createGlobalStyle} from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary: #4682B4;
+    --primary: 	black;
+    --second:   #4169E1;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   * {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     box-sizing: border-box;
+    text-decoration: none;
   }
   
   html,
@@ -42,6 +45,12 @@ const GlobalStyle = createGlobalStyle`
       font-weight: bold;
       text-decoration: none;
     }
+    h2 {
+      transition: color .7s;
+    }
+  }
+  .postsContainer__post h2:hover {
+    color: var(--second);
   }
   .headerContainer {
     display: flex;
@@ -60,6 +69,13 @@ const GlobalStyle = createGlobalStyle`
   }
   li {
     list-style-type: none;
+  }
+  .page_post {
+    margin: 40px 10px;
+  }
+  .data_post{
+    font-style: italic;
+    color: #808080;
   }
 `;
 

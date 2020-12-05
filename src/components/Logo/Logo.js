@@ -1,5 +1,4 @@
 import React from 'react'
-import Social from '../Socials/index'
 import GlobalStyle from '../Global/index'
 
 export default function Logo() {
