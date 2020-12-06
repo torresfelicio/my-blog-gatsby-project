@@ -1,10 +1,4 @@
-import { ThemeProvider, createGlobalStyle } from 'styled-components'
-
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
