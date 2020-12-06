@@ -6,10 +6,12 @@ export default function Logo() {
     return(
         <>
         <GlobalStyle/>
+            <Link to="/">
             <div className="headerContainer">
                 <img src="https://unavatar.now.sh/github/torresfelicio" />
                 <h1>Lucas Torrses</h1>
             </div>
+            </Link>
             <span >
                 <ul className="contatos">
                     <Link to="https://github.com/torresfelicio" className="links">

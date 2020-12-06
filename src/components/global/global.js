@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     color: #333;
     box-sizing: border-box;
     list-style-type: none;
+    text-decoration: none;
   }
   
   html,
@@ -50,7 +51,6 @@ const GlobalStyle = createGlobalStyle`
   .postsContainer__post {
     a {
       font-weight: bold;
-      text-decoration: none;
     }
   }
   .headerContainer {
