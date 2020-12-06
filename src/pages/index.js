@@ -1,4 +1,5 @@
 import React from 'react'
+import GlobalStyle from '../components/global/global'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function Home() {
@@ -20,17 +21,19 @@ export default function Home() {
   `)
 
   return (
-    <div className="flex justify-center">
-      <div style={{ maxWidth: '700px' }} className="flex flex-column">
-        <div className="flex flex-column ph3">
-          <h1 className="mb0 pa0">Blog do Lucis</h1>
-          <span className="mt3 gray">Ainda não comecei a escrever</span>
+    <>
+    <GlobalStyle/>
+    <div className="">
+      <div className="">
+        <div className="">
+          <h1 className="">Lucas Torres</h1>
+          <span className="">Ainda não comecei a escrever</span>
         </div>
-        <ul className="pt3 ph3 mh0">
+        <ul className="">
           {edges.map(({ node: { data: { title: { text } } , uid } }) => {
             return (
-              <li className="list">
-                <Link to={`/${uid}`} className="no-underline underline-hover black">
+              <li className="">
+                <Link to={`/${uid}`} className="">
                   <h2>{text}</h2>
                 </Link>
                 <hr />
@@ -40,5 +43,6 @@ export default function Home() {
         </ul>
       </div>
     </div>
+    </>
   )
 }
