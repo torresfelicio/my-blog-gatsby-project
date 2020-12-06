@@ -1,5 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../components/global/global'
+import Logo from '../components/logo/logo'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function Home() {
@@ -25,18 +26,14 @@ export default function Home() {
     <GlobalStyle/>
     <div className="">
       <div className="">
-        <div className="">
-          <h1 className="">Lucas Torres</h1>
-          <span className="">Ainda não comecei a escrever</span>
-        </div>
+        <Logo/>
         <ul className="">
           {edges.map(({ node: { data: { title: { text } } , uid } }) => {
             return (
-              <li className="">
+              <li key={uid}>
                 <Link to={`/${uid}`} className="">
                   <h2>{text}</h2>
                 </Link>
-                <hr />
               </li>
             )
           })}

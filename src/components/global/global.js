@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito', sans-serif;
     color: #333;
     box-sizing: border-box;
+    list-style-type: none;
   }
   
   html,
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
   }
   button,
   a {
-    transition: opacity .3s;
+    transition: opacity .5s;
     &:focus,
     &:hover {
       opacity: .5;
@@ -67,6 +68,16 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
   }
+  .contatos{
+    list-style-type: none;
+    display: flex;
+    li {
+     margin-left: 10px;
+    }
+    .links {
+        text-decoration:none; 
+    }
+   }
 `;
 
 export default GlobalStyle;

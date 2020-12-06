@@ -1,5 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../components/global/global'
+import Logo from '../components/logo/logo'
 import {  graphql } from 'gatsby'
 
 const Post = ({ data: { prismicPost } }) => {
@@ -8,6 +9,7 @@ const Post = ({ data: { prismicPost } }) => {
   return (
     <>
     <GlobalStyle/>
+    <Logo/>
     <div className="flex justify-center">
       <div style={{ maxWidth: '700px' }} className="flex flex-column">
         <div className="flex flex-column ph3">
