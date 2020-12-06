@@ -101,7 +101,9 @@ const GlobalStyle = createGlobalStyle`
         margin: 0px;
         padding: 0px;
         font-style: italic;
+        color: #333;
     }
+    
 `;
 
 export default GlobalStyle;
