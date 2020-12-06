@@ -92,6 +92,16 @@ const GlobalStyle = createGlobalStyle`
     .subinfo {
         font-style: italic;
     }
+    .title_post {
+      h2{
+        margin: 0px
+      }
+    }
+    .time_post {
+        margin: 0px;
+        padding: 0px;
+        font-style: italic;
+    }
 `;
 
 export default GlobalStyle;

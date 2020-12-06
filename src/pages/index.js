@@ -13,6 +13,7 @@ export default function Home() {
               title {
                 text
               }
+              time 
             }
             uid
           }
@@ -28,12 +29,13 @@ export default function Home() {
       <div className="">
         <Logo/>
         <ul className="titlePost">
-          {edges.map(({ node: { data: { title: { text } } , uid } }) => {
+          {edges.map(({ node: { data: { title: { text }, time}, uid } }) => {
             return (
               <li key={uid}>
-                <Link to={`/${uid}`} className="">
+                <Link to={`/${uid}`} className="title_post">
                   <h2>{text}</h2>
                 </Link>
+                <p className="time_post">{time}min</p>
               </li>
             )
           })}
