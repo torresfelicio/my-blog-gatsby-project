@@ -9,7 +9,7 @@ export default function Logo() {
             <Link to="/">
             <div className="headerContainer">
                 <img src="https://unavatar.now.sh/github/torresfelicio" />
-                <h1>Lucas Torrses</h1>
+                <h1>Lucas Torres</h1>
             </div>
             </Link>
             <span >
