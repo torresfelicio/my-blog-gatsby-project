@@ -27,7 +27,7 @@ export default function Home() {
     <div className="">
       <div className="">
         <Logo/>
-        <ul className="">
+        <ul className="titlePost">
           {edges.map(({ node: { data: { title: { text } } , uid } }) => {
             return (
               <li key={uid}>

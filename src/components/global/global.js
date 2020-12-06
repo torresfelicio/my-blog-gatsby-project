@@ -77,7 +77,21 @@ const GlobalStyle = createGlobalStyle`
     .links {
         text-decoration:none; 
     }
-   }
+    }
+
+    .titlePost {
+        h2{
+            transition: 0.5s;
+        }
+    }
+    .titlePost {
+        h2:hover{
+            color:	#708090;
+        }
+    }
+    .subinfo {
+        font-style: italic;
+    }
 `;
 
 export default GlobalStyle;
