@@ -14,13 +14,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "date-fns": "^2.16.1",
     "gatsby": "^2.23.12",
     "gatsby-source-prismic": "^3.1.4",
-    "next": "^10.0.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^5.2.1"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
