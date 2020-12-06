@@ -1,6 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../components/global/global'
-import Logo from '../components/logo/logo'
+import Logo from '../components/logo/logo.jsx'
 import {  graphql } from 'gatsby'
 
 const Post = ({ data: { prismicPost } }) => {

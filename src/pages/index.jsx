@@ -1,6 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../components/global/global'
-import Logo from '../components/logo/logo'
+import Logo from '../components/logo/logo.jsx'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function Home() {
